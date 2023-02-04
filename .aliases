@@ -1,0 +1,32 @@
+# ls
+alias ls='ls -F'
+alias ll='ls -lh'
+alias lla='ll -A'
+
+# Protect from overwriting
+alias cp='cp -i'
+alias mv='mv -i'
+
+# Create intermediate directories as required
+alias mkdir='mkdir -p'
+
+# Continue getting a partially-downloaded file
+alias wget='wget --continue'
+
+# tmux
+alias ta='tmux attach-session -t'
+alias ts='tmux new-session -s'
+
+# Create and activate a Python virtual environment
+alias ve='python3 -m venv venv'
+alias va='source venv/bin/activate'
+
+# Create a directory and navigate to it
+mcd() {
+    mkdir "${1}" && cd "${1}" || exit
+}
+
+# Search for cheat sheets on cheat.sh
+cht() {
+    curl "cht.sh/$1"
+}
