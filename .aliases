@@ -15,6 +15,7 @@ alias wget='wget --continue'
 
 # tmux
 alias ta='tmux attach-session -t'
+alias tl='tmux list-sessions'
 alias ts='tmux new-session -s'
 
 # Create and activate a Python virtual environment
