@@ -24,7 +24,7 @@ alias va='source venv/bin/activate'
 
 # Create a directory and navigate to it
 mcd() {
-    mkdir "${1}" && cd "${1}" || exit
+    mkdir "$1" && cd "$1" || exit
 }
 
 # Search for cheat sheets on cheat.sh
