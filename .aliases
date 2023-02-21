@@ -19,8 +19,8 @@ alias tl='tmux list-sessions'
 alias ts='tmux new-session -s'
 
 # Create and activate a Python virtual environment
-alias ve='python3 -m venv venv'
-alias va='source venv/bin/activate'
+alias ve='python3 -m venv .venv'
+alias va='source .venv/bin/activate'
 
 # Create a directory and navigate to it
 mcd() {
