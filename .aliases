@@ -3,7 +3,7 @@ alias ls='ls -F'
 alias ll='ls -lh'
 alias lla='ll -A'
 
-# Protect from overwriting
+# Prompt before overwriting files with cp and mv
 alias cp='cp -i'
 alias mv='mv -i'
 
@@ -22,12 +22,12 @@ alias ts='tmux new-session -s'
 alias ve='python3 -m venv .venv'
 alias va='source .venv/bin/activate'
 
-# Create a directory and navigate to it
+# Create a new directory and cd into it
 mcd() {
     mkdir "$1" && cd "$1" || exit
 }
 
-# Search for cheat sheets on cheat.sh
+# Shortcut for using cht.sh to get cheatsheets
 cht() {
     curl "cht.sh/$1"
 }
