@@ -11,5 +11,7 @@ brew "wget"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 
+cask "anki"
 cask "firefox"
+cask "spotify"
 cask "visual-studio-code"
