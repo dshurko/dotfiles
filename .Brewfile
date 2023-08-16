@@ -13,5 +13,6 @@ brew "zsh-syntax-highlighting"
 
 cask "anki"
 cask "firefox"
+cask "obsidian"
 cask "spotify"
 cask "visual-studio-code"
