@@ -12,6 +12,7 @@ brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 
 cask "firefox"
+cask "obsidian"
 cask "spotify"
 cask "virtualbox"
 cask "visual-studio-code"
