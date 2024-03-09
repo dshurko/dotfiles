@@ -30,7 +30,7 @@ mcd() {
     mkdir "$1" && cd "$1" || exit
 }
 
-# Shortcut for using cht.sh to get cheatsheets
+# Shortcut for using cheat.sh to get cheatsheets
 cht() {
     curl "cheat.sh/$1"
 }
