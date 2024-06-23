@@ -14,6 +14,8 @@ brew "zsh-syntax-highlighting"
 
 cask "anki"
 cask "firefox"
+cask "font-0xproto-nerd-font"
+cask "iterm2"
 cask "obsidian"
 cask "spotify"
 cask "vlc"
