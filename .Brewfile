@@ -1,6 +1,7 @@
 tap "homebrew/bundle"
 
 brew "fd"
+brew "ffmpeg"
 brew "fzf"
 brew "jq"
 brew "neovim"
