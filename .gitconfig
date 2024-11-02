@@ -1,6 +1,10 @@
+[includeIf "gitdir:~/dev/personal/"]
+    path = ~/dev/personal/.gitconfig
+[includeIf "gitdir:~/dev/work/"]
+    path = ~/dev/work/.gitconfig
+
 [user]
 	name = Dmytro Shurko
-	email = 
 
 [alias]
 	co = checkout
@@ -9,3 +13,4 @@
 	st = status
 	unstage = reset HEAD --
 	last = log -1 HEAD
+	graph = log --all --graph --decorate --oneline
