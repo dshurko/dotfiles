@@ -1,5 +1,7 @@
+tap "hashicorp/tap"
 tap "homebrew/bundle"
 
+brew "duckdb"
 brew "fd"
 brew "ffmpeg"
 brew "fzf"
@@ -13,6 +15,7 @@ brew "tree"
 brew "wget"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
+brew "hashicorp/tap/terraform"
 
 cask "anki"
 cask "firefox"
