@@ -9,7 +9,7 @@ return {
 
 		vim.keymap.set("n", "<leader>a", function()
 			harpoon:list():add()
-		end)
+		end, { desc = "Harpoon: [A]dd current file to marks" })
 		vim.keymap.set("n", "<C-e>", function()
 			harpoon.ui:toggle_quick_menu(harpoon:list())
 		end)
@@ -27,13 +27,12 @@ return {
 			harpoon:list():select(4)
 		end)
 
-		-- Toggle previous & next buffers stored within Harpoon list
 		vim.keymap.set("n", "<leader>p", function()
 			harpoon:list():prev()
-		end)
+		end, { desc = "Harpoon: Navigate to the [p]revious mark" })
 		vim.keymap.set("n", "<leader>n", function()
 			harpoon:list():next()
-		end)
+		end, { desc = "Harpoon: Navigate to the [n]ext mark" })
 	end,
 }
 
