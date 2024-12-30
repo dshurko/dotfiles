@@ -3,6 +3,9 @@ return {
 		"folke/which-key.nvim",
 		event = "VeryLazy",
 		opts = {
+			-- Delay before showing the popup
+			delay = 0,
+
 			-- Document keybinding groups
 			spec = {
 				{ "<leader>c", group = "[C]ode", mode = { "n", "x" } },
