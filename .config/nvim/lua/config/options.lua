@@ -32,7 +32,7 @@ vim.opt.signcolumn = "yes"
 -- Decrease update time
 vim.opt.updatetime = 250
 
--- Decrease mapped sequence wait time
+-- Display which-key popup sooner
 vim.opt.timeoutlen = 300
 
 -- Open new splits to the right and below
