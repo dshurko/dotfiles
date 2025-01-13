@@ -1,5 +1,6 @@
 tap "hashicorp/tap"
 tap "homebrew/bundle"
+tap "virtuslab/scala-cli"
 
 brew "duckdb"
 brew "fd"
@@ -17,6 +18,7 @@ brew "wget"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 brew "hashicorp/tap/terraform"
+brew "virtuslab/scala-cli/scala-cli"
 
 cask "anki"
 cask "firefox"
