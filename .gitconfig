@@ -11,7 +11,7 @@
 	graph = log --all --graph --decorate --oneline
 
 [includeIf "gitdir:~/dev/personal/"]
-    path = ~/dev/personal/.gitconfig
+    path = ~/dev/personal/.gitconfig-personal
 
 [includeIf "gitdir:~/dev/work/"]
-    path = ~/dev/work/.gitconfig
+    path = ~/dev/work/.gitconfig-work
