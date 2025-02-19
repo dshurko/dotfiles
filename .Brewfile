@@ -23,6 +23,7 @@ brew "hashicorp/tap/terraform"
 brew "virtuslab/scala-cli/scala-cli"
 
 cask "anki"
+cask "docker"
 cask "firefox"
 cask "font-0xproto-nerd-font"
 cask "ghostty"
