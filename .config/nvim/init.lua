@@ -20,6 +20,5 @@ require("mini.deps").setup({ path = { package = path_package } })
 
 ---------------------------------------------------------------------------
 
-_G.add = MiniDeps.add
-_G.now = MiniDeps.now
-_G.later = MiniDeps.later
+require("config.autocmds")
+require("config.keymaps")
