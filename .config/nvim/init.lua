@@ -18,8 +18,11 @@ end
 -- Set up 'mini.deps' (customize to your liking)
 require("mini.deps").setup({ path = { package = path_package } })
 
---------------------------------------------------
+---------------------------------------------------------------------------
 
 require("config.autocmds")
 require("config.keymaps")
 require("config.options")
+
+require("plugins.mini")
+require("plugins.tokyonight")
