@@ -20,7 +20,7 @@ require("mini.deps").setup({ path = { package = path_package } })
 
 ---------------------------------------------------------------------------
 
-require("config.autocmds")
+require("config.autocommands")
 require("config.keymaps")
 require("config.options")
 
