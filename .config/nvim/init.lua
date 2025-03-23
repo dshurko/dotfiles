@@ -26,3 +26,4 @@ require("config.options")
 
 require("plugins.mini")
 require("plugins.tokyonight")
+require("plugins.treesitter")
