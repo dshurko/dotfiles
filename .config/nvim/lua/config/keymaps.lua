@@ -7,8 +7,5 @@ vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to right window"
 -- Clear search highlights with Escape
 vim.keymap.set("n", "<Esc>", "<Cmd>nohlsearch<CR><Esc>")
 
--- Show diagnostics in location list
-vim.keymap.set("n", "<Leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostics in location list" })
-
 -- Exit terminal mode with double Escape
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
