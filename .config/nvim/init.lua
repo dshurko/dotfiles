@@ -24,6 +24,7 @@ require("config.autocommands")
 require("config.keymaps")
 require("config.options")
 
+require("plugins.lsp")
 require("plugins.mini")
 require("plugins.tokyonight")
 require("plugins.treesitter")
