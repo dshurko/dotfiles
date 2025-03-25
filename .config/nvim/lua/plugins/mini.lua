@@ -19,6 +19,10 @@ later(function()
 end)
 
 later(function()
+  require("mini.pairs").setup()
+end)
+
+later(function()
   require("mini.surround").setup()
 end)
 
