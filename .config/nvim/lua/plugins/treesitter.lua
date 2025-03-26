@@ -21,7 +21,6 @@ now(function()
 			"markdown_inline",
 			"python",
 			"query",
-			"scala",
 			"sql",
 			"vim",
 			"vimdoc",
