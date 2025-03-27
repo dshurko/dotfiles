@@ -41,5 +41,9 @@ now(function()
 end)
 
 now(function()
+	require("mini.notify").setup()
+end)
+
+now(function()
 	require("mini.statusline").setup()
 end)

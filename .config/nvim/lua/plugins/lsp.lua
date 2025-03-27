@@ -21,20 +21,20 @@ now(function()
 	})
 	require("mason-tool-installer").setup({
 		ensure_installed = {
-			-- LSP
+			-- LSP (Language Server Protocol)
 			"bashls",
 			"clangd",
 			"lua_ls",
 			"pyright",
 
-			-- Linters and formatters
+			-- Formatters and linters
 			"clang-format",
 			"ruff",
 			"shellcheck",
 			"shfmt",
 			"stylua",
 
-			-- DAP
+			-- DAP (Debug Adapter Protocol)
 		},
 	})
 end)
