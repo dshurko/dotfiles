@@ -27,7 +27,7 @@ now(function()
 			"lua_ls",
 			"pyright",
 
-			-- Formatters and linters
+			-- Linters and formatters
 			"clang-format",
 			"ruff",
 			"shellcheck",
