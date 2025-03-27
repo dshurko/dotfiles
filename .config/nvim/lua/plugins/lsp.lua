@@ -14,9 +14,6 @@ now(function()
 			function(server_name)
 				require("lspconfig")[server_name].setup({})
 			end,
-			["ruff"] = function()
-				require("lspconfig").ruff.setup({ enabled = false })
-			end,
 		},
 	})
 	require("mason-tool-installer").setup({
