@@ -30,7 +30,15 @@ end)
 -- General workflow
 --------------------------------------------------
 later(function()
+	require("mini.diff").setup()
+end)
+
+later(function()
 	require("mini.files").setup()
+end)
+
+later(function()
+	require("mini.git").setup()
 end)
 
 --------------------------------------------------
