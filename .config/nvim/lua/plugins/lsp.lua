@@ -1,13 +1,12 @@
 local add, now = MiniDeps.add, MiniDeps.now
 
 now(function()
-	add("folke/lazydev.nvim")
+	add("neovim/nvim-lspconfig")
 	add("williamboman/mason.nvim")
 	add("williamboman/mason-lspconfig.nvim")
 	add("WhoIsSethDaniel/mason-tool-installer.nvim")
-	add("neovim/nvim-lspconfig")
+	add("folke/lazydev.nvim")
 
-	require("lazydev").setup()
 	require("mason").setup()
 	require("mason-lspconfig").setup({
 		handlers = {
@@ -34,4 +33,5 @@ now(function()
 			-- DAP (Debug Adapter Protocol)
 		},
 	})
+	require("lazydev").setup()
 end)
