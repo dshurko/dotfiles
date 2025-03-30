@@ -30,6 +30,7 @@ require("config.autocommands")
 require("config.keymaps")
 require("config.options")
 
+require("plugins.blink")
 require("plugins.conform")
 require("plugins.lsp")
 require("plugins.mini")

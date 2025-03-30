@@ -8,10 +8,13 @@ now(function()
 	add("folke/lazydev.nvim")
 
 	require("mason").setup()
+	local capabilities = require("blink.cmp").get_lsp_capabilities()
 	require("mason-lspconfig").setup({
 		handlers = {
 			function(server_name)
-				require("lspconfig")[server_name].setup({})
+				require("lspconfig")[server_name].setup({
+					capabilities = capabilities,
+				})
 			end,
 		},
 	})
