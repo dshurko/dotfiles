@@ -46,6 +46,10 @@ later(function()
 	require("mini.git").setup()
 end)
 
+later(function()
+	require("mini.pick").setup()
+end)
+
 --------------------------------------------------
 -- Appearance
 --------------------------------------------------
