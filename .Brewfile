@@ -1,5 +1,4 @@
 tap "hashicorp/tap"
-tap "homebrew/bundle"
 tap "virtuslab/scala-cli"
 
 brew "autojump"
