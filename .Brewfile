@@ -1,5 +1,5 @@
+tap "coursier/formulas"
 tap "hashicorp/tap"
-tap "virtuslab/scala-cli"
 
 brew "autojump"
 brew "coreutils"
@@ -19,8 +19,8 @@ brew "wget"
 brew "zsh-autosuggestions"
 brew "zsh-history-substring-search"
 brew "zsh-syntax-highlighting"
+brew "coursier/formulas/coursier"
 brew "hashicorp/tap/terraform"
-brew "virtuslab/scala-cli/scala-cli"
 
 cask "anki"
 cask "docker"
