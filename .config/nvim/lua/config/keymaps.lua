@@ -1,11 +1,22 @@
--- Navigate windows with Ctrl+hjkl
-vim.keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to left window" })
-vim.keymap.set("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to lower window" })
-vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to upper window" })
-vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to right window" })
+local map = require("utils").map
 
--- Clear search highlights with Escape
-vim.keymap.set("n", "<Esc>", "<Cmd>nohlsearch<CR>")
+--------------------------------------------------
+-- Navigation
+--------------------------------------------------
+-- Window movement
+map("n", "<C-h>", "<C-w><C-h>", "Move to left window")
+map("n", "<C-j>", "<C-w><C-j>", "Move to bottom window")
+map("n", "<C-k>", "<C-w><C-k>", "Move to top window")
+map("n", "<C-l>", "<C-w><C-l>", "Move to right window")
 
--- Exit terminal mode with double Escape
-vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
+--------------------------------------------------
+-- UI
+--------------------------------------------------
+-- Clear search highlighting
+map("n", "<Esc>", "<Cmd>nohlsearch<CR>", "Clear search highlights")
+
+--------------------------------------------------
+-- Mode-specific
+--------------------------------------------------
+-- Terminal mode
+map("t", "<Esc><Esc>", "<C-\\><C-n>", "Exit terminal mode")
