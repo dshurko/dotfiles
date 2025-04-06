@@ -1,10 +1,9 @@
 local add, now = MiniDeps.add, MiniDeps.now
+local utils = require("utils")
+local map, map_leader = utils.map, utils.map_leader
+local lsp_picker = require("mini.extra").pickers.lsp
 
 now(function()
-  local utils = require("utils")
-  local map, map_leader = utils.map, utils.map_leader
-  local lsp_picker = require("mini.extra").pickers.lsp
-
   add("neovim/nvim-lspconfig")
   add("williamboman/mason.nvim")
   add("williamboman/mason-lspconfig.nvim")
@@ -41,18 +40,18 @@ now(function()
   require("lazydev").setup()
 
   map("n", "gD", vim.lsp.buf.declaration, "[G]oto [D]eclaration")
+  map("n", "gI", function()
+    lsp_picker({ scope = "implementation" })
+  end, "[G]oto [I]mplementation")
   map("n", "gd", function()
     lsp_picker({ scope = "definition" })
   end, "[G]oto [D]efinition")
-  map("n", "gi", function()
-    lsp_picker({ scope = "implementation" })
-  end, "[G]oto [I]mplementation")
   map("n", "gr", function()
     lsp_picker({ scope = "references" })
   end, "[G]oto [R]eferences")
-  map("n", "gt", function()
+  map_leader("n", "D", function()
     lsp_picker({ scope = "type_definition" })
-  end, "[G]oto [T]ype Definition")
+  end, "Type [D]efinition")
   map_leader("n", "ds", function()
     lsp_picker({ scope = "document_symbol" })
   end, "[D]ocument [S]ymbols")
