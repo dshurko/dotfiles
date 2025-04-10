@@ -11,9 +11,6 @@ later(function()
       python = { "ruff_organize_imports", "ruff_format" },
       sh = { "shfmt" },
     },
-    format_on_save = {
-      lsp_format = "fallback",
-      timeout_ms = 500,
-    },
+    format_on_save = { lsp_format = "fallback", timeout_ms = 500 },
   })
 end)
