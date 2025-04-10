@@ -3,9 +3,9 @@ local utils = require("utils")
 local map, map_leader = utils.map, utils.map_leader
 
 now(function()
-  add("neovim/nvim-lspconfig")
   add("williamboman/mason.nvim")
   add("williamboman/mason-lspconfig.nvim")
+  add("neovim/nvim-lspconfig")
   add("WhoIsSethDaniel/mason-tool-installer.nvim")
   add("folke/lazydev.nvim")
 
