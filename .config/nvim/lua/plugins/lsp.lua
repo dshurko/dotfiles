@@ -38,7 +38,7 @@ now(function()
   })
   require("lazydev").setup()
 
-  map("n", "gD", vim.lsp.buf.declaration, "[G]oto [D]eclaration")
+  map("n", "gD", "<Cmd>Pick lsp scope='declaration'<CR>", "[G]oto [D]eclaration")
   map("n", "gI", "<Cmd>Pick lsp scope='implementation'<CR>", "[G]oto [I]mplementation")
   map("n", "gd", "<Cmd>Pick lsp scope='definition'<CR>", "[G]oto [D]efinition")
   map("n", "gr", "<Cmd>Pick lsp scope='references'<CR>", "[G]oto [R]eferences")
