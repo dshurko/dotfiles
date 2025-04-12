@@ -1,5 +1,6 @@
 local now, later = MiniDeps.now, MiniDeps.later
-local map_leader = require("utils").map_leader
+local utils = require("utils")
+local map, map_leader = utils.map, utils.map_leader
 
 --------------------------------------------------
 -- Text editing
@@ -44,8 +45,41 @@ later(function()
 end)
 
 later(function()
-  require("mini.files").setup({
-    mappings = { close = "<Esc>" },
+  require("mini.files").setup()
+
+  -- Mapping to show/hide dot-files
+  local show_dotfiles = true
+
+  local filter_show = function(fs_entry)
+    return true
+  end
+
+  local filter_hide = function(fs_entry)
+    return not vim.startswith(fs_entry.name, ".")
+  end
+
+  local toggle_dotfiles = function()
+    show_dotfiles = not show_dotfiles
+    local new_filter = show_dotfiles and filter_show or filter_hide
+    MiniFiles.refresh({ content = { filter = new_filter } })
+  end
+
+  -- Yank in register full path of entry under cursor
+  local yank_path = function()
+    local path = (MiniFiles.get_fs_entry() or {}).path
+    if path == nil then
+      return vim.notify("Cursor is not on valid entry")
+    end
+    vim.fn.setreg(vim.v.register, path)
+  end
+
+  vim.api.nvim_create_autocmd("User", {
+    pattern = "MiniFilesBufferCreate",
+    callback = function(args)
+      local buf_id = args.data.buf_id
+      map("n", ".", toggle_dotfiles, "Toggle [.]dotfiles", { buffer = buf_id })
+      map("n", "Y", yank_path, "[Y]ank path", { buffer = buf_id })
+    end,
   })
 end)
 
@@ -81,8 +115,16 @@ end)
 --------------------------------------------------
 -- Appearance
 --------------------------------------------------
+later(function()
+  require("mini.cursorword").setup()
+end)
+
 now(function()
   require("mini.icons").setup()
+end)
+
+later(function()
+  require("mini.indentscope").setup()
 end)
 
 now(function()
