@@ -45,9 +45,22 @@ later(function()
 end)
 
 later(function()
-  require("mini.files").setup()
+  require("mini.files").setup({
+    mappings = { close = "<Esc>" },
+  })
 
-  -- Mapping to show/hide dot-files
+  -- Toggle explorer
+  local minifiles_toggle = function(...)
+    if not MiniFiles.close() then
+      MiniFiles.open(...)
+    end
+  end
+
+  map("n", "-", function()
+    minifiles_toggle(vim.api.nvim_buf_get_name(0))
+  end, "Toggle file explorer [-]")
+
+  -- Show/hide dot-files
   local show_dotfiles = true
 
   local filter_show = function(fs_entry)
