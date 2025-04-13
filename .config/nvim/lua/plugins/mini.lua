@@ -51,7 +51,7 @@ later(function()
 
   -- Toggle explorer
   local minifiles_toggle = function(...)
-    if not MiniFiles.close() then
+    if MiniFiles.close() == nil then
       MiniFiles.open(...)
     end
   end
