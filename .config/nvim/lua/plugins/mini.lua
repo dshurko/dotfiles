@@ -38,6 +38,8 @@ later(function()
       signs = { add = "+", change = "~", delete = "-" },
     },
   })
+
+  map_leader("n", "go", "<Cmd>lua MiniDiff.toggle_overlay()<CR>", "[G]it diff [O]verlay")
 end)
 
 later(function()
@@ -121,13 +123,17 @@ later(function()
   map_leader("n", "fg", "<Cmd>Pick grep_live<CR>", "[F]ind by [G]rep")
   map_leader("n", "fw", '<Cmd>Pick grep pattern="<cword>"<CR>', "[F]ind [W]ord under cursor")
 
-  -- Git
-
   -- Other
   map_leader("n", "f:", '<Cmd>Pick history scope=":"<CR>', "[F]ind command history (enhanced [:])")
   map_leader("n", "fh", "<Cmd>Pick help<CR>", "[F]ind [H]elp")
   map_leader("n", "fk", "<Cmd>Pick keymaps<CR>", "[F]ind [K]eymaps")
   map_leader("n", "fr", "<Cmd>Pick resume<CR>", "[F]ind [R]esume last picker")
+
+  -- Git
+  map_leader("n", "gC", "<Cmd>Pick git_commits path='%'<CR>", "[G]it [C]ommits for file")
+  map_leader("n", "gb", "<Cmd>Pick git_branches<CR>", "[G]it [B]ranches")
+  map_leader("n", "gc", "<Cmd>Pick git_commits<CR>", "[G]it [C]ommits")
+  map_leader("n", "gh", "<Cmd>Pick git_hunks<CR>", "[G]it [H]unks")
 end)
 
 --------------------------------------------------
