@@ -1,5 +1,6 @@
 tap "coursier/formulas"
 tap "hashicorp/tap"
+tap "jesseduffield/lazygit"
 
 brew "autojump"
 brew "coreutils"
@@ -21,6 +22,7 @@ brew "zsh-history-substring-search"
 brew "zsh-syntax-highlighting"
 brew "coursier/formulas/coursier"
 brew "hashicorp/tap/terraform"
+brew "jesseduffield/lazygit/lazygit"
 
 cask "anki"
 cask "docker"
