@@ -38,15 +38,20 @@ now(function()
   })
   require("lazydev").setup()
 
+  -- Navigation
+  map("n", "gd", "<Cmd>Pick lsp scope='definition'<CR>", "[G]oto [D]efinition")
   map("n", "gD", "<Cmd>Pick lsp scope='declaration'<CR>", "[G]oto [D]eclaration")
   map("n", "gI", "<Cmd>Pick lsp scope='implementation'<CR>", "[G]oto [I]mplementation")
-  map("n", "gd", "<Cmd>Pick lsp scope='definition'<CR>", "[G]oto [D]efinition")
   map("n", "gr", "<Cmd>Pick lsp scope='references'<CR>", "[G]oto [R]eferences")
   map("n", "gt", "<Cmd>Pick lsp scope='type_definition'<CR>", "[G]oto [T]ype definition")
+
+  -- Actions
   map_leader("n", "ca", vim.lsp.buf.code_action, "[C]ode [A]ction")
+  map_leader("n", "rn", vim.lsp.buf.rename, "[R]e[n]ame")
+
+  -- Information
   map_leader("n", "dd", '<Cmd>Pick diagnostic scope="current"<CR>', "[D]iagnostics in [D]ocument")
   map_leader("n", "ds", "<Cmd>Pick lsp scope='document_symbol'<CR>", "[D]ocument [S]ymbols")
   map_leader("n", "dw", '<Cmd>Pick diagnostic scope="all"<CR>', "[D]iagnostics in [W]orkspace")
-  map_leader("n", "rn", vim.lsp.buf.rename, "[R]e[n]ame")
   map_leader("n", "ws", "<Cmd>Pick lsp scope='workspace_symbol'<CR>", "[W]orkspace [S]ymbols")
 end)

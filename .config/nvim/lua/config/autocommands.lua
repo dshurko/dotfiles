@@ -6,3 +6,13 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     vim.highlight.on_yank()
   end,
 })
+
+-- Automatically close lazygit terminal buffers when the process exits
+vim.api.nvim_create_autocmd("TermClose", {
+  desc = "Auto-close lazygit terminal buffers",
+  group = vim.api.nvim_create_augroup("lazygit-autoclose", { clear = true }),
+  pattern = "*lazygit*",
+  callback = function(event)
+    vim.cmd("bdelete! " .. event.buf)
+  end,
+})
