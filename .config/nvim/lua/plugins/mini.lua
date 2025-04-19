@@ -52,9 +52,7 @@ later(function()
 end)
 
 later(function()
-  require("mini.files").setup({
-    mappings = { close = "<Esc>" },
-  })
+  require("mini.files").setup()
 
   -- Toggle explorer
   local minifiles_toggle = function(...)
