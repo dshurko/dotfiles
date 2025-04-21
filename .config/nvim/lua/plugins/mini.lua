@@ -149,17 +149,17 @@ later(function()
   map_leader("n", "fw", '<Cmd>Pick grep pattern="<cword>"<CR>', "[F]ind [W]ord under cursor")
   map_leader("n", "f/", '<Cmd>Pick buf_lines scope="current"<CR>', "[F]ind in buffer (enhanced [/])")
 
-  -- Git
-  map_leader("n", "gf", "<Cmd>Pick git_commits<CR>", "[G]it [F]ind commits")
-  map_leader("n", "gF", "<Cmd>Pick git_commits path='%'<CR>", "[G]it [F]ind file commits")
-  map_leader("n", "gb", "<Cmd>Pick git_branches<CR>", "[G]it [B]ranches")
-  map_leader("n", "gh", "<Cmd>Pick git_hunks<CR>", "[G]it [H]unks")
-
   -- Other
   map_leader("n", "fh", "<Cmd>Pick help<CR>", "[F]ind [H]elp")
   map_leader("n", "fk", "<Cmd>Pick keymaps<CR>", "[F]ind [K]eymaps")
   map_leader("n", "f:", '<Cmd>Pick history scope=":"<CR>', "[F]ind command history (enhanced [:])")
   map_leader("n", "fr", "<Cmd>Pick resume<CR>", "[F]ind [R]esume last picker")
+
+  -- Git
+  map_leader("n", "gf", "<Cmd>Pick git_commits<CR>", "[G]it [F]ind commits")
+  map_leader("n", "gF", "<Cmd>Pick git_commits path='%'<CR>", "[G]it [F]ind file commits")
+  map_leader("n", "gb", "<Cmd>Pick git_branches<CR>", "[G]it [B]ranches")
+  map_leader("n", "gh", "<Cmd>Pick git_hunks<CR>", "[G]it [H]unks")
 end)
 
 --------------------------------------------------
