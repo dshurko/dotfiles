@@ -32,6 +32,7 @@ require("config.options")
 
 require("plugins.blink")
 require("plugins.conform")
+require("plugins.dadbod")
 require("plugins.harpoon")
 require("plugins.lsp")
 require("plugins.mini")
