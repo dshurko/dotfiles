@@ -18,6 +18,7 @@ now(function()
           capabilities = capabilities,
         })
       end,
+      ["ruff"] = function() end,
     },
   })
   require("mason-tool-installer").setup({
