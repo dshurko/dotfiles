@@ -61,9 +61,7 @@ later(function()
     end
   end
 
-  map("n", "-", function()
-    minifiles_toggle(vim.api.nvim_buf_get_name(0))
-  end, "Toggle file explorer [-]")
+  map("n", "-", minifiles_toggle, "Toggle file explorer [-]")
 
   -- Show/hide dot-files
   local show_dotfiles = true
