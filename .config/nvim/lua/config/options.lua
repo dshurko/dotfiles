@@ -51,7 +51,5 @@ vim.opt.inccommand = "split"
 --------------------------------------------------
 -- Decrease update time for better user experience (ms)
 vim.opt.updatetime = 250
--- Time to wait for mapped sequence to complete (ms)
-vim.opt.timeoutlen = 300
 -- Save undo history between sessions
 vim.opt.undofile = true
