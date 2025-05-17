@@ -9,9 +9,3 @@
 	unstage = reset HEAD --
 	last = log -1 HEAD
 	graph = log --all --graph --decorate --oneline
-
-[includeIf "gitdir:~/dev/personal/"]
-    path = ~/dev/personal/.gitconfig-personal
-
-[includeIf "gitdir:~/dev/work/"]
-    path = ~/dev/work/.gitconfig-work
