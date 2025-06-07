@@ -4,7 +4,7 @@ now(function()
   add({
     source = "saghen/blink.cmp",
     depends = { "rafamadriz/friendly-snippets" },
-    checkout = "v1.0.0",
+    checkout = "v1.3.1",
   })
 
   require("blink.cmp").setup({
