@@ -128,9 +128,6 @@ later(function()
   map_leader("n", "gb", "<Cmd>Pick git_branches<CR>", "[G]it [B]ranches")
   map_leader("n", "gh", "<Cmd>Pick git_hunks<CR>", "[G]it [H]unks")
   map_leader("n", "gH", "<Cmd>Pick git_hunks path='%'<CR>", "[G]it [H]unks file")
-
-  -- Full interface
-  map_leader("n", "gg", "<Cmd>terminal lazygit<CR>i", "[G]it [G]UI (Lazygit)")
 end)
 
 later(function()
