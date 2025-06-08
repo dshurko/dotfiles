@@ -34,6 +34,7 @@ now(function()
       "ruff",
       "shellcheck",
       "shfmt",
+      "sqlfluff",
       "stylua",
     },
   })
