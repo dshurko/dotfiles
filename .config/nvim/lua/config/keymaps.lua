@@ -10,8 +10,5 @@ map("n", "<C-l>", "<C-w><C-l>", "Move to right window")
 -- Clear search highlighting
 map("n", "<Esc>", "<Cmd>nohlsearch<CR>", "Clear search highlights")
 
--- Terminal mode
-map("t", "<Esc><Esc>", "<C-\\><C-n>", "Exit terminal mode")
-
 -- Lazygit
 map_leader("n", "gg", "<Cmd>terminal lazygit<CR>i", "[G]it [G]UI (Lazygit)")
