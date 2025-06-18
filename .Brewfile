@@ -27,6 +27,7 @@ brew "hashicorp/tap/terraform"
 brew "jesseduffield/lazygit/lazygit"
 
 cask "anki"
+cask "dbeaver-community"
 cask "docker"
 cask "firefox"
 cask "font-0xproto-nerd-font"
