@@ -26,7 +26,6 @@ brew "coursier/formulas/coursier"
 brew "hashicorp/tap/terraform"
 brew "jesseduffield/lazygit/lazygit"
 
-cask "anki"
 cask "dbeaver-community"
 cask "docker"
 cask "firefox"
