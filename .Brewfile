@@ -1,7 +1,6 @@
 tap "coursier/formulas"
 tap "hashicorp/tap"
 tap "jesseduffield/lazydocker"
-tap "jesseduffield/lazygit"
 
 brew "autojump"
 brew "coreutils"
