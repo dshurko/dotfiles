@@ -31,6 +31,7 @@ require("config.keymaps")
 require("config.options")
 
 require("plugins.blink")
+require("plugins.claudecode")
 require("plugins.conform")
 require("plugins.dadbod")
 require("plugins.harpoon")
