@@ -28,7 +28,6 @@ brew "hashicorp/tap/terraform"
 brew "jesseduffield/lazydocker/lazydocker"
 
 cask "anki"
-cask "cursor"
 cask "dbeaver-community"
 cask "docker-desktop"
 cask "firefox"
