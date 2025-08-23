@@ -1,6 +1,5 @@
 local add, later = MiniDeps.add, MiniDeps.later
-local utils = require("utils")
-local map_leader = utils.map_leader
+local map_leader = require("utils").map_leader
 
 later(function()
   add({
