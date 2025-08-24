@@ -1,4 +1,5 @@
 tap "coursier/formulas"
+tap "derailed/k9s"
 tap "hashicorp/tap"
 tap "jesseduffield/lazydocker"
 
@@ -23,6 +24,7 @@ brew "zsh-completions"
 brew "zsh-history-substring-search"
 brew "zsh-syntax-highlighting"
 brew "coursier/formulas/coursier"
+brew "derailed/k9s/k9s"
 brew "hashicorp/tap/terraform"
 brew "jesseduffield/lazydocker/lazydocker"
 
