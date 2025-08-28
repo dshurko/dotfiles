@@ -1,14 +1,14 @@
 local utils = require("utils")
 local map, map_leader = utils.map, utils.map_leader
 
--- Window movement
-map("n", "<C-h>", "<C-w><C-h>", "Move to left window")
-map("n", "<C-j>", "<C-w><C-j>", "Move to bottom window")
-map("n", "<C-k>", "<C-w><C-k>", "Move to top window")
-map("n", "<C-l>", "<C-w><C-l>", "Move to right window")
+-- Window navigation
+map("n", "<C-h>", "<C-w><C-h>", "Move left")
+map("n", "<C-j>", "<C-w><C-j>", "Move down")
+map("n", "<C-k>", "<C-w><C-k>", "Move up")
+map("n", "<C-l>", "<C-w><C-l>", "Move right")
 
--- Clear search highlighting
-map("n", "<Esc>", "<Cmd>nohlsearch<CR>", "Clear search highlights")
+-- Search enhancements
+map("n", "<Esc>", "<Cmd>nohlsearch<CR>", "Clear highlights")
 
--- Lazygit
+-- Git integration
 map_leader("n", "gg", "<Cmd>terminal lazygit<CR>i", "[G]it [G]UI (Lazygit)")
