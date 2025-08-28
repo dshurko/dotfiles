@@ -1,4 +1,4 @@
--- Highlight yanked text to provide visual feedback when copying
+-- Highlight yanked text for visual feedback
 vim.api.nvim_create_autocmd("TextYankPost", {
   desc = "Highlight yanked text",
   group = vim.api.nvim_create_augroup("highlight-yank", { clear = true }),
@@ -7,7 +7,7 @@ vim.api.nvim_create_autocmd("TextYankPost", {
   end,
 })
 
--- Automatically close lazygit terminal buffers when the process exits
+-- Auto-close lazygit terminals on exit
 vim.api.nvim_create_autocmd("TermClose", {
   desc = "Auto-close lazygit terminal",
   group = vim.api.nvim_create_augroup("lazygit-autoclose", { clear = true }),
