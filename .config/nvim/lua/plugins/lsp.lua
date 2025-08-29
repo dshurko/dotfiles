@@ -53,6 +53,7 @@ now(function()
   -- Information
   map_leader("n", "dd", '<Cmd>Pick diagnostic scope="current"<CR>', "[D]iagnostics in [D]ocument")
   map_leader("n", "dw", '<Cmd>Pick diagnostic scope="all"<CR>', "[D]iagnostics in [W]orkspace")
+  map_leader("n", "dq", vim.diagnostic.setloclist, "[D]iagnostic [Q]uickfix")
   map_leader("n", "ds", "<Cmd>Pick lsp scope='document_symbol'<CR>", "[D]ocument [S]ymbols")
   map_leader("n", "ws", "<Cmd>Pick lsp scope='workspace_symbol'<CR>", "[W]orkspace [S]ymbols")
 end)
